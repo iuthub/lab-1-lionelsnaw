@@ -1,0 +1,74 @@
+20:31:31.103000 == Info: STATE: INIT => CONNECT handle 0x13d43f8; line 1418 (connection #-5000)
+20:31:31.119000 == Info: Rebuilt URL to: example.com/
+20:31:31.119000 == Info: Added connection 0. The cache now contains 1 members
+20:31:31.119000 == Info: STATE: CONNECT => WAITRESOLVE handle 0x13d43f8; line 1454 (connection #0)
+20:31:31.134000 == Info:   Trying 93.184.216.34...
+20:31:31.134000 == Info: TCP_NODELAY set
+20:31:31.134000 == Info: STATE: WAITRESOLVE => WAITCONNECT handle 0x13d43f8; line 1535 (connection #0)
+20:31:31.368000 == Info: Connected to example.com (93.184.216.34) port 80 (#0)
+20:31:31.368000 == Info: STATE: WAITCONNECT => SENDPROTOCONNECT handle 0x13d43f8; line 1587 (connection #0)
+20:31:31.368000 == Info: Marked for [keep alive]: HTTP default
+20:31:31.368000 == Info: STATE: SENDPROTOCONNECT => DO handle 0x13d43f8; line 1605 (connection #0)
+20:31:31.368000 => Send header, 75 bytes (0x4b)
+0000: GET / HTTP/1.1
+0010: Host: example.com
+0023: User-Agent: curl/7.57.0
+003c: Accept: */*
+0049: 
+20:31:31.368000 == Info: STATE: DO => DO_DONE handle 0x13d43f8; line 1684 (connection #0)
+20:31:31.368000 == Info: STATE: DO_DONE => WAITPERFORM handle 0x13d43f8; line 1809 (connection #0)
+20:31:31.368000 == Info: STATE: WAITPERFORM => PERFORM handle 0x13d43f8; line 1825 (connection #0)
+20:31:31.618000 == Info: HTTP 1.1 or later with persistent connection, pipelining supported
+20:31:31.618000 <= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+20:31:31.618000 <= Recv header, 22 bytes (0x16)
+0000: Accept-Ranges: bytes
+20:31:31.618000 <= Recv header, 31 bytes (0x1f)
+0000: Cache-Control: max-age=604800
+20:31:31.618000 <= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+20:31:31.618000 <= Recv header, 37 bytes (0x25)
+0000: Date: Sat, 02 Feb 2019 15:31:38 GMT
+20:31:31.618000 <= Recv header, 31 bytes (0x1f)
+0000: Etag: "1541025663+gzip+ident"
+20:31:31.618000 <= Recv header, 40 bytes (0x28)
+0000: Expires: Sat, 09 Feb 2019 15:31:38 GMT
+20:31:31.618000 <= Recv header, 46 bytes (0x2e)
+0000: Last-Modified: Fri, 09 Aug 2013 23:54:35 GMT
+20:31:31.618000 == Info: Server ECS (dca/2493) is not blacklisted
+20:31:31.618000 <= Recv header, 24 bytes (0x18)
+0000: Server: ECS (dca/2493)
+20:31:31.618000 <= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+20:31:31.618000 <= Recv header, 14 bytes (0xe)
+0000: X-Cache: HIT
+20:31:31.618000 <= Recv header, 22 bytes (0x16)
+0000: Content-Length: 1270
+20:31:31.618000 <= Recv header, 2 bytes (0x2)
+0000: 
+20:31:31.618000 <= Recv data, 851 bytes (0x353)
+0000: <!doctype html>.<html>.<head>.    <title>Example Domain</title>.
+0040: .    <meta charset="utf-8" />.    <meta http-equiv="Content-type
+0080: " content="text/html; charset=utf-8" />.    <meta name="viewport
+00c0: " content="width=device-width, initial-scale=1" />.    <style ty
+0100: pe="text/css">.    body {.        background-color: #f0f0f2;.   
+0140:      margin: 0;.        padding: 0;.        font-family: "Open S
+0180: ans", "Helvetica Neue", Helvetica, Arial, sans-serif;.        . 
+01c0:    }.    div {.        width: 600px;.        margin: 5em auto;. 
+0200:        padding: 50px;.        background-color: #fff;.        bo
+0240: rder-radius: 1em;.    }.    a:link, a:visited {.        color: #
+0280: 38488f;.        text-decoration: none;.    }.    @media (max-wid
+02c0: th: 700px) {.        body {.            background-color: #fff;.
+0300:         }.        div {.            width: auto;.            mar
+0340: gin: 0 auto;.      
+20:31:31.618000 <= Recv data, 419 bytes (0x1a3)
+0000:       border-radius: 0;.            padding: 1em;.        }.    
+0040: }.    </style>    .</head>..<body>.<div>.    <h1>Example Domain<
+0080: /h1>.    <p>This domain is established to be used for illustrati
+00c0: ve examples in documents. You may use this.    domain in example
+0100: s without prior coordination or asking for permission.</p>.    <
+0140: p><a href="http://www.iana.org/domains/example">More information
+0180: ...</a></p>.</div>.</body>.</html>.
+20:31:31.618000 == Info: STATE: PERFORM => DONE handle 0x13d43f8; line 1994 (connection #0)
+20:31:31.618000 == Info: multi_done
+20:31:31.618000 == Info: Connection #0 to host example.com left intact
